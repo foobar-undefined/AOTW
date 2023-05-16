@@ -11,16 +11,17 @@ export default function App() {
   
   return (
     <div className="App">
-      <main className='container'>
-        <NavBar />
-        < Routes>
-        
-          <Route path="anime/" element={<AnimeList />} />
-          <Route path="anime/:id" element={<Anime/>} />
-        </Routes>
-
-        <AuthPage path="/*" setUser={setUser}/>
-      </main>
+      {user ? (
+      <>
+        <NavBar user ={user}/>
+          <Routes>
+            <Route path="anime/" element={<AnimeList />} />
+            <Route path="anime/:id" element={<Anime/>} />
+          </Routes>
+        </>
+        ):(
+            <AuthPage path ="/" setUser={setUser}/>
+        )}
     </div>
   );
 }

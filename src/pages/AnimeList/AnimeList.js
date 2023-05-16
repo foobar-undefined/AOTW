@@ -9,7 +9,7 @@ export default function AnimeList(props){
             const response = await fetch("https://kitsu.io/api/edge/trending/anime/")
             const animeData = await response.json()
             setAnimeList(animeData.data);
-            console.log(anime);
+            //console.log(anime);
         }catch(error){
             console.log(error)
         }
