@@ -1,23 +1,26 @@
+import './LoginPage.css'
 import { useState } from "react";
 
 export default function LoginPage({setUser}){
-    const [username, setUsername] = useState('');
+    const [loginUser, setLoginUser] = useState('');
     
     const handleChange=(event) => {
-        setUsername(event.target.value);
-        console.log(username);
+        setLoginUser(event.target.value);
+ 
     }
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-        setUser(username);
+        setUser(loginUser);
     };
     return(
-        <div>
+        <div class= "login-box">
             <h1> Login Page</h1>
             <form onSubmit={handleSubmit}>
+                <label>Name</label>
                 <input type="text" 
-                    value={username} 
+                    value={loginUser} 
+                    required
                     onChange={handleChange} 
                     placeholder="Enter username"
                 />

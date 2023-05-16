@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import AnimeCard from "../../components/AnimeCard/AnimeCard";
 
 export default function AnimeList(props){
     const [anime, setAnimeList] = useState([]);
@@ -20,7 +21,7 @@ export default function AnimeList(props){
 
     return(
         <main>
-            <div>
+            {/* <div>
                 <form className="search-box">
                     <input
                         type ="search"
@@ -28,16 +29,12 @@ export default function AnimeList(props){
                         required
                         />
                 </form>
-            </div>
+            </div> */}
            
             <div className="AnimeList">
                 {anime && anime.map((animeItem) => (
                     <div key={animeItem.id}>
-                        <p>Title: {animeItem.attributes.canonicalTitle}</p>
-                        <p>Start Date: {animeItem.attributes.startDate}</p>
-                        <p>End Date: {animeItem.attributes.endDate}</p>
-                        <p>Episode Count: {animeItem.attributes.episodeCount}</p>
-                        <img src = {animeItem.attributes.posterImage.tiny}/>
+                        <AnimeCard anime={animeItem} />
                     </div>
                 ))}
             </div>

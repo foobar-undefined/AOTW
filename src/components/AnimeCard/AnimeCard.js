@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom"
 
-export default function AnimeCard(props){
+export default function AnimeCard({anime}){
+    //const anime = props.anime;
     return(
-        <>
-        <Link to {`/anime/${props.anime.id}`}>
-            <div>
-                <h1>{props.anime.canonicalTitle}</h1>
-                {/* <h2>{[props.anime.]}</h2> */}
-            </div>
-        </Link> 
-        </>
+        <div className ="anime-card">
+            <h2>{anime.attributes.canonicalTitle}</h2>
+            <p>Start Date: {anime.attributes.startDate}</p>
+            <p>End Date: {anime.attributes.endDate}</p>
+            <p>Episode Count: {anime.attributes.episodeCount}</p>
+            <img src = {anime.attributes.posterImage.tiny} alt="Anime image"/>
+        </div>
+    
     )
 }

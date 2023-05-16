@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 export default function SignUpForm({setUser}){
     
     const [newUser, setNewUser] = useState({
@@ -24,17 +23,20 @@ export default function SignUpForm({setUser}){
             setUser(newUser)
 
         }catch(error){
-            setNewUser({ ...newUser, error: 'Sign Up Failed - Try Again'});
+            
         }
     }
+
     return (
         <div>
             <div className="form-container">
+            <h1> Sign Up Page</h1>
                 <form autoComplete="off" onSubmit={handleSubmit}>
                     <label>Name</label>
                     <input 
                         type="text" 
-                        name="name" 
+                        name="name"
+                        placeholder="Enter your name..." 
                         value={newUser.name} 
                         onChange={handleChange} 
                         required 
@@ -43,6 +45,7 @@ export default function SignUpForm({setUser}){
                     <input 
                         type="email" 
                         name="email" 
+                        placeholder="Enter your Email..."
                         value={newUser.email} 
                         onChange={handleChange} 
                         required 
@@ -51,6 +54,7 @@ export default function SignUpForm({setUser}){
                     <input 
                         type="password" 
                         name="password" 
+                        placeholder="Enter your password..."
                         value={newUser.password} 
                         onChange={handleChange} 
                         required 
@@ -58,7 +62,8 @@ export default function SignUpForm({setUser}){
                     <label>Confirm</label>
                     <input 
                         type="password" 
-                        name="confirm" 
+                        name="confirm"
+                        placeholder="Confirm your password..."
                         value={newUser.confirm} 
                         onChange={handleChange} 
                         required 
