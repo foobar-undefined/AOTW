@@ -5,9 +5,10 @@ import NavBar from '../../components/NavBar/NavBar';
 import Anime from '../Anime/Anime';
 import AuthPage from '../AuthPage/AuthPage';
 import AnimeList from '../AnimeList/AnimeList';
+import MangaList from '../MangaList.js/MangaList';
 
 export default function App() {
-  const [user, setUser] = useState("Michael");
+  const [user, setUser] = useState(null);
   
   return (
     <div className="App">
@@ -17,6 +18,7 @@ export default function App() {
           <Routes>
             <Route path="anime/" element={<AnimeList />} />
             <Route path="anime/:id" element={<Anime />} />
+            <Route path="manga/" element ={<MangaList/>}/>
           </Routes>
         </>
         ):(
