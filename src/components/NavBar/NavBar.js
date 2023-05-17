@@ -12,6 +12,9 @@ export default function NavBar({user}){
                     <Link to ="/anime" className="links"> Anime List</Link>
                 </li>
                 <li>
+                    <Link to="manga" className="links">Manga List</Link>
+                </li>
+                <li>
                     <Link to="" className="links">Log Out</Link>
                 </li>
             </ul>

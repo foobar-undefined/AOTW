@@ -6,7 +6,6 @@ export default function LoginPage({setUser}){
     
     const handleChange=(event) => {
         setLoginUser(event.target.value);
- 
     }
 
     const handleSubmit = (event) =>{
@@ -16,7 +15,7 @@ export default function LoginPage({setUser}){
     return(
         <div class= "login-box">
             <h1> Login Page</h1>
-            <form onSubmit={handleSubmit}>
+            <form className="login-box-form" onSubmit={handleSubmit}>
                 <label>Name</label>
                 <input type="text" 
                     value={loginUser} 
@@ -24,7 +23,7 @@ export default function LoginPage({setUser}){
                     onChange={handleChange} 
                     placeholder="Enter username"
                 />
-                <button type="submit">Log in</button>
+                <button class="loginBtn" type="submit">Log in</button>
             </form>
         </div>
     );  

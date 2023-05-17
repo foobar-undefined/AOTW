@@ -68,7 +68,7 @@ export default function SignUpForm({setUser}){
                         onChange={handleChange} 
                         required 
                     />
-                    <button type="submit">SIGN UP</button>
+                    <button className = "signUp"type="submit">SIGN UP</button>
                 </form>
             </div>
             <p className="error-message">&nbsp;{newUser.error}</p>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LoginPage from "../../components/LoginPage/LoginPage";
 import SignUpForm from "../../components/SignUpForm/SignUpForm";
+import imgs from "../../imgs/aniFlx.jpeg"
 
 export default function AuthPage({setUser}){
     const [isNewUser, setIsNewUser] = useState(true);
@@ -11,6 +12,10 @@ export default function AuthPage({setUser}){
 
     return(
         <main>
+            <div style = {{backgroundImage: `url(${imgs})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover"
+            }}>
             {isNewUser ? (
                 <div>
                     <LoginPage setUser={setUser} />
@@ -18,10 +23,11 @@ export default function AuthPage({setUser}){
                 </div>
             ):(
                 <div>
-                    <SignUpForm setUser = {setUser} />
+                    <SignUpForm setUser = {setUser} toggleAuthMode={toggleAuthMode} />
                     { <button className="login" onClick={toggleAuthMode}>Log In</button> }
                 </div>
             )}
+            </div>
         </main>
     );
 }

@@ -7,7 +7,7 @@ export default function AnimeList(props){
 
     const fetchData = async () => {
         try{
-            const response = await fetch("https://kitsu.io/api/edge/trending/anime/")
+            const response = await fetch("https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=6")
             const animeData = await response.json()
             setAnimeList(animeData.data);
         }catch(error){
@@ -21,15 +21,15 @@ export default function AnimeList(props){
     return(
         <main>
             <div className='content-wrap'>
-            {/*
-                <form className="search-box">
+            
+                {/* <form className="search-box">
                     <input
                         type ="search"
                         placeholder="Search for an anime..."
                         required
                         />
-                </form>
-            </div> */}
+                </form> */}
+            
             <div className="animeList">
                 {anime && anime.map((animeItem) => (
                     <AnimeCard anime={animeItem} key={animeItem.id}/>

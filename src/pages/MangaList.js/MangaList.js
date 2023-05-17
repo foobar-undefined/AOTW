@@ -1,13 +1,16 @@
+import "./MangaList.css"
 import { useEffect, useState } from "react";
+import MangaCard from "../../components/MangaCard/MangaCard.js";
 
-export default function MangaList(){
-    const [mangaList, setMangaList] =useState([]);
+export default function MangaList(props){
+    const [mangaList, setMangaList] = useState([]);
 
     const fetchData = async () => {
         try{
             const response = await fetch("https://kitsu.io/api/edge/trending/manga");
             const mangaData = await response.json()
             setMangaList(mangaData.data);
+            console.log(mangaList)
         }catch(error){
             console.log(error)
         }

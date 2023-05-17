@@ -1,17 +1,17 @@
-.animeList{
+.mangaList{
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(3,1fr);
     border-radius: 1px;
-    grid-gap: 4px;
+    grid-gap: 4px; 
     position: relative;
     margin-left: 250px;
 }
-.anime-card{
+.manga-card{
     padding: 16px 8px;
 }
 
-.anime-card > img {
+.manga-card > img {
     display: block;
     height: 350px;
     object-fit: cover;
@@ -23,14 +23,13 @@
     margin-right: auto;
 }
 
-.anime-card-link{
+.manga-card-link{
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
 }
-
-.animePage{
+.mangaPage{
     position: relative;
     margin-left: 250px;
     overflow: hidden;
