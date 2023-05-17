@@ -1,0 +1,17 @@
+.animeList{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.anime-card{
+    padding: 16px 8px;
+}
+
+img {
+    display: block;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}

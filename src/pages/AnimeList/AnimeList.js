@@ -1,3 +1,4 @@
+import './AnimeList.css'
 import { useEffect, useState } from "react"
 import AnimeCard from "../../components/AnimeCard/AnimeCard";
 
@@ -9,7 +10,6 @@ export default function AnimeList(props){
             const response = await fetch("https://kitsu.io/api/edge/trending/anime/")
             const animeData = await response.json()
             setAnimeList(animeData.data);
-            //console.log(anime);
         }catch(error){
             console.log(error)
         }
@@ -30,7 +30,7 @@ export default function AnimeList(props){
                 </form>
             </div> */}
            
-            <div className="AnimeList">
+            <div className="animeList">
                 {anime && anime.map((animeItem) => (
                         <AnimeCard anime={animeItem} key={animeItem.id}/>
                 ))}
