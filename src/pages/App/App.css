@@ -21,17 +21,23 @@
     margin: 64px 0;
     padding: 0;
     color: #fff;
-    li{
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-    }
   }
 }
-
-
+li{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 16px 52px;
+}
+li:hover{
+  background-color: #283976;
+  cursor: pointer;
+}
+.links{
+  color: white;
+  text-decoration: none;
+}
 
 .App-header {
   background-color: #282c34;

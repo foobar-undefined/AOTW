@@ -6,11 +6,13 @@ export default function NavBar({user}){
             <h1>Welcome, {user}</h1>
             <ul class="main-buttons">
                 <li>
-                    <Link to="/">Home</Link>
-                    &nbsp; | &nbsp;
-                    <Link to ="/anime"> Anime List</Link>
-                    &nbsp;&nbsp;
-                    <Link to="">Log Out</Link>
+                    <Link to="/" className="links">Home</Link>
+                </li>
+                <li>
+                    <Link to ="/anime" className="links"> Anime List</Link>
+                </li>
+                <li>
+                    <Link to="" className="links">Log Out</Link>
                 </li>
             </ul>
         </nav>

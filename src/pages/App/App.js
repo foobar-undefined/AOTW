@@ -7,7 +7,7 @@ import AuthPage from '../AuthPage/AuthPage';
 import AnimeList from '../AnimeList/AnimeList';
 
 export default function App() {
-  const [user, setUser] = useState("null");
+  const [user, setUser] = useState("Michael");
   
   return (
     <div className="App">
