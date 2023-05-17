@@ -20,7 +20,8 @@ export default function AnimeList(props){
 
     return(
         <main>
-            {/* <div>
+            <div className='content-wrap'>
+            {/*
                 <form className="search-box">
                     <input
                         type ="search"
@@ -29,12 +30,12 @@ export default function AnimeList(props){
                         />
                 </form>
             </div> */}
-           
             <div className="animeList">
                 {anime && anime.map((animeItem) => (
-                        <AnimeCard anime={animeItem} key={animeItem.id}/>
-                ))}
+                    <AnimeCard anime={animeItem} key={animeItem.id}/>
+                    ))}
             </div>
+        </div>
         </main>
     )
 }
