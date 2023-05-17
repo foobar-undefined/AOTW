@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
 import AnimeCard from "../../components/AnimeCard/AnimeCard";
 
 export default function AnimeList(props){
@@ -33,9 +32,7 @@ export default function AnimeList(props){
            
             <div className="AnimeList">
                 {anime && anime.map((animeItem) => (
-                    <div key={animeItem.id}>
-                        <AnimeCard anime={animeItem} />
-                    </div>
+                        <AnimeCard anime={animeItem} key={animeItem.id}/>
                 ))}
             </div>
         </main>

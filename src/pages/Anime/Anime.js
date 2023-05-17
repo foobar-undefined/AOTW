@@ -1,36 +1,29 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
-export default function Anime(props){
-    const {id} = useParams();
-    const url = "https://kitsu.io/api/edge/anime/";
-    const [anime, setAnime] = useState(null);
+import { useParams, useLocation} from "react-router-dom";
 
-    const fetchData = async() => {
-        try{
-            const response = await fetch(url);
-            const animeData = await response.json()
-            setAnime(animeData.data);
-        }catch(error){
-            console.log(error)
-        }
-    }
-
-    useEffect(()=>{
-        fetchData();
-    },[]);
+export default function Anime(){
+    const location = useLocation();
+    const {anime} = location.state; 
+    console.log(anime);
+    
+    if (!anime) {
+        return <div>Anime not found.</div>;
+      }
 
     return(
         <div>
-            <h2>Anime</h2>
-                {anime && anime.map((animeItem) => (
-                    <div key={animeItem.id}>
-                        <p>Title: {animeItem.attributes.canonicalTitle}</p>
-                        <p>Start Date: {animeItem.attributes.startDate}</p>
-                        <p>End Date: {animeItem.attributes.endDate}</p>
-                        <p>Episode Count: {animeItem.attributes.episodeCount}</p>
-                    </div>
-                ))}
+            <h1>Anime Detail Page</h1>
+            {anime && (
+                <div>
+                    <h2>{anime.attributes.canonicalTitle}</h2> 
+                    <img src = {anime.attributes.posterImage.medium} alt=""/>
+                    <p>Title: {anime.attributes.canonicalTitle}</p>
+                    <p>Start Date: {anime.attributes.startDate}</p>
+                    <p>End Date: {anime.attributes.endDate}</p>
+                    <p>Episode Count: {anime.attributes.episodeCount}</p>
+                    <p>Description: {anime.attributes.description}</p>
+                </div>
+            )}
         </div>
     )
 }

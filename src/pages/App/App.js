@@ -7,7 +7,7 @@ import AuthPage from '../AuthPage/AuthPage';
 import AnimeList from '../AnimeList/AnimeList';
 
 export default function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("null");
   
   return (
     <div className="App">
@@ -16,7 +16,7 @@ export default function App() {
         <NavBar user ={user}/>
           <Routes>
             <Route path="anime/" element={<AnimeList />} />
-            <Route path="anime/:id" element={<Anime/>} />
+            <Route path="anime/:id" element={<Anime />} />
           </Routes>
         </>
         ):(

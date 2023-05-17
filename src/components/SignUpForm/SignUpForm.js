@@ -20,7 +20,7 @@ export default function SignUpForm({setUser}){
     const handleSubmit = async (evt) => {
         evt.preventDefault();
         try{
-            setUser(newUser)
+            setUser(newUser.name)
 
         }catch(error){
             
