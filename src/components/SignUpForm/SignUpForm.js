@@ -30,8 +30,8 @@ export default function SignUpForm({setUser}){
     return (
         <div>
             <div className="form-container">
-            <h1> Sign Up Page</h1>
-                <form autoComplete="off" onSubmit={handleSubmit}>
+                <form className = "auth-form" autoComplete="off" onSubmit={handleSubmit}>
+                    <br/>
                     <label>Name</label>
                     <input 
                         type="text" 

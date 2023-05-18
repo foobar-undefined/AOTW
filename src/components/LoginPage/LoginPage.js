@@ -14,8 +14,8 @@ export default function LoginPage({setUser}){
     };
     return(
         <div class= "login-box">
-            <h1> Login Page</h1>
-            <form className="login-box-form" onSubmit={handleSubmit}>
+            <form className="auth-form" onSubmit={handleSubmit}>
+                <br/>
                 <label>Name</label>
                 <input type="text" 
                     value={loginUser} 

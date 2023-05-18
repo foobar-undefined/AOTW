@@ -1,3 +1,23 @@
+.search-box{
+    position: relative;
+    top: 10px;
+    left:10%;
+    width:90%
+}
+.search-box input{
+    height: 5vh;
+    width: 30%;
+}
+
+.searchButton{
+    height: 5vh;
+    width: 7%;
+    right: 0;
+    color: #fff;
+    background: #FF9700;
+    cursor: pointer;  
+}
+
 .animeList{
     display: grid;
     flex-wrap: wrap;

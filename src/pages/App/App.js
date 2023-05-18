@@ -9,7 +9,7 @@ import MangaList from '../MangaList.js/MangaList';
 import Manga from '../Manga/Manga';
 
 export default function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("null");
   
   return (
     <div className="App">

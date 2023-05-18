@@ -5,11 +5,19 @@
   margin: 0;
   box-sizing: border-box;
 }
-form {
+
+.signUp-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: "100vh";
+}
+
+.auth-form {
     height: 520px;
     width: 400px;
     background-color: rgba(45, 33, 33, 0.13);
-    position: relative;
     margin: 0 auto;
     border-radius: 10px;
     backdrop-filter: blur(15px);
@@ -19,15 +27,15 @@ form {
     padding: 50px 35px;
 }
 
-form >input{
+.auth-form > input{
   margin-bottom: 10px;
 }
 
-form > label {
+.auth-form > label {
   color:white;
 }
 
-form * {
+.auth-form * {
   font-family: "Poppins", sans-serif;
   color: #000000;
   letter-spacing: 0.5px;
@@ -46,8 +54,8 @@ form * {
   border-radius: 5px;
   cursor: pointer;
 }
-  
-.login{
+
+.signUp{
   margin-top: 50px;
   width: 100%;
   background-color: #b03030;
@@ -58,12 +66,24 @@ form * {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* .login{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #b03030;
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+} */
   
 ::placeholder {
   color: #1b1b1b;
 }
 
-input {
+.auth-form > input {
     display: block;
     height: 50px;
     width: 100%;

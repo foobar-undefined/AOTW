@@ -2,6 +2,7 @@ import { useState } from "react";
 import LoginPage from "../../components/LoginPage/LoginPage";
 import SignUpForm from "../../components/SignUpForm/SignUpForm";
 import imgs from "../../imgs/aniFlx.jpeg"
+import "./AuthPage.css"
 
 export default function AuthPage({setUser}){
     const [isNewUser, setIsNewUser] = useState(true);
@@ -12,19 +13,23 @@ export default function AuthPage({setUser}){
 
     return(
         <main>
-            <div style = {{backgroundImage: `url(${imgs})`,
+            <div 
+            className="signUp-container"
+            style = {{backgroundImage: `url(${imgs})`,
                         backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover"
+                        backgroundSize: "cover",
+                        height: "100vh"
             }}>
             {isNewUser ? (
-                <div>
+                <div >
                     <LoginPage setUser={setUser} />
-                    { <button className="signUp" onClick={toggleAuthMode}>Sign up</button> }
+                    { <button className="signUpBtn" onClick={toggleAuthMode}>Sign up</button> }
                 </div>
             ):(
                 <div>
                     <SignUpForm setUser = {setUser} toggleAuthMode={toggleAuthMode} />
-                    { <button className="login" onClick={toggleAuthMode}>Log In</button> }
+                    <p> Not a user? { <button className="login" onClick={toggleAuthMode}>Log In</button> }
+                    </p>
                 </div>
             )}
             </div>

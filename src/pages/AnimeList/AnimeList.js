@@ -21,21 +21,24 @@ export default function AnimeList(props){
     return(
         <main>
             <div className='content-wrap'>
-            
-                {/* <form className="search-box">
-                    <input
-                        type ="search"
-                        placeholder="Search for an anime..."
-                        required
-                        />
-                </form> */}
-            
-            <div className="animeList">
-                {anime && anime.map((animeItem) => (
-                    <AnimeCard anime={animeItem} key={animeItem.id}/>
-                    ))}
+                <div className='search-box-wrap'>
+                    
+                    <form className="search-box">
+                        <input
+                            type ="search"
+                            placeholder="Search for an anime..."
+                            required
+                            />
+                            <button type ="submit" class="searchButton">search</button>
+                    </form>
+                </div>
+                
+                <div className="animeList">
+                    {anime && anime.map((animeItem) => (
+                        <AnimeCard anime={animeItem} key={animeItem.id}/>
+                        ))}
+                </div>
             </div>
-        </div>
         </main>
     )
 }
