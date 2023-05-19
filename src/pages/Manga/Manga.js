@@ -11,13 +11,14 @@ export default function Manga(){
 
     return(
         <div>
-            <h1> Manga Detail Page</h1>
+
             {manga && (
                 <div className="mangaPage">
                     <h2>{manga.attributes.canonicalTitle}</h2>
                     <img src = {manga.attributes.posterImage.medium} alt=""/>
                     <p>Popularity rank: {manga.attributes.popularityRank}</p>
                     <p>Description: {manga.attributes.description}</p>
+                    <p>Average Rating: {manga.attributes.averageRating} </p>
                 </div>
             )}
         </div>

@@ -7,21 +7,25 @@ import Anime from '../Anime/Anime';
 import AnimeList from '../AnimeList/AnimeList';
 import MangaList from '../MangaList.js/MangaList';
 import Manga from '../Manga/Manga';
+import Home from '../Home/Home';
 
 export default function App() {
-  const [user, setUser] = useState("null");
+  const [user, setUser] = useState("Michael");
   
   return (
     <div className="App">
       {user ? (
       <>
-        <NavBar user ={user}/>
-          <Routes>
-            <Route path="anime/" element={<AnimeList />} />
-            <Route path="anime/:id" element={<Anime />} />
-            <Route path="manga/" element ={<MangaList/>}/>
-            <Route path="manga/:id" element={<Manga />} />
-          </Routes>
+        <NavBar user ={user} setUser={setUser}/>
+            <div className='routes-container'>
+              <Routes>
+                <Route path = "home" element= {<Home />}/>
+                <Route path="anime/" element={<AnimeList />} />
+                <Route path="anime/:id" element={<Anime />} />
+                <Route path="manga/" element ={<MangaList/>}/>
+                <Route path="manga/:id" element={<Manga />} />
+              </Routes>
+            </div>
         </>
         ):(
             <AuthPage path ="/" setUser={setUser}/>

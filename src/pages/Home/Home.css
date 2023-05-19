@@ -1,0 +1,14 @@
+  
+  .center h1{
+    line-height: .95;
+    color: #09312e;
+
+  }
+  
+  .center {
+    background-color: #1B355B;
+    
+    position: absolute;
+  
+    height: 50%;
+  }

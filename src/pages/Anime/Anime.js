@@ -1,6 +1,6 @@
 
 import {  useLocation} from "react-router-dom";
-
+import "./Anime.css"
 export default function Anime(){
     const location = useLocation();
     const {anime} = location.state; 
@@ -14,13 +14,22 @@ export default function Anime(){
         <div>
             {anime && (
                 <div className="animePage">
-                    <h2>{anime.attributes.canonicalTitle}</h2> 
-                    <img src = {anime.attributes.posterImage.medium} alt=""/>
-                    <p>Title: {anime.attributes.canonicalTitle}</p>
-                    <p>Start Date: {anime.attributes.startDate}</p>
-                    <p>End Date: {anime.attributes.endDate}</p>
-                    <p>Episode Count: {anime.attributes.episodeCount}</p>
-                    <p>Description: {anime.attributes.description}</p>
+                    <div className="anime-info">
+                        <div className="img-container">
+                            <img src = {anime.attributes.posterImage.medium} alt=""/>
+                        </div>
+                    </div>
+                    <div className="anime-stats">
+                        <h2>{anime.attributes.canonicalTitle}</h2> 
+                        <p><strong>Start Date:</strong>  {anime.attributes.startDate}</p>
+                        <p><strong>End Date:</strong>  {anime.attributes.endDate}</p>
+                        <p><strong>Episode Count:</strong> {anime.attributes.episodeCount}</p>
+                        <p><strong>Average rating:</strong>  {anime.attributes.averageRating}</p>
+                        <br />
+                        <div className="description">
+                            <p><strong> Description: </strong> <br />{anime.attributes.synopsis}</p>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>

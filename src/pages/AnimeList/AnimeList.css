@@ -28,7 +28,7 @@
     margin-left: 250px;
 }
 .anime-card{
-    padding: 16px 8px;
+    padding: 20px 8px;
 }
 
 .anime-card > img {
@@ -36,10 +36,9 @@
     height: 350px;
     object-fit: cover;
     border-radius: 16px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
     transition: 0.4s;
     display: block;
-    margin-left: auto;
     margin-right: auto;
 }
 
@@ -48,15 +47,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
+    margin-right: auto;
 }
 
-.animePage{
-    position: relative;
-    margin-left: 250px;
-    overflow: hidden;
-    padding: 1em 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
-    width: 500px;
-}
