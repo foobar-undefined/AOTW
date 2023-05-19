@@ -9,11 +9,11 @@ AOTW allows you to check out on hundreds of anime or manga across the internet. 
 
 ## Website previews: 
 
-<img src="./images/sign-up.png>" width ="500px">
+<img src="images/sign-up.PNG" width ="500px">
 
-<img src="images/anime.png>" width ="500px">
+<img src="images/anime.PNG" width ="500px">
 
-<img src="../images/search.png>" width ="500px">
+<img src="images/search.PNG" width ="500px">
 
 ## 👇 Check out the website here! 👇
 
