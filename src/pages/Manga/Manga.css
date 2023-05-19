@@ -1,4 +1,12 @@
-.animePage{
+.mangaPage{
+    /* position: relative;
+    margin-left: 250px;
+    overflow: hidden;
+    padding: 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    width: 500px; */
     display: flex;
     align-items: center;
     gap:20px;
@@ -8,12 +16,10 @@
     background-size: 200%;
     animation: waves 5s ease;
 }
-
-
-.img-container{
-    padding: 30px;
-    margin: auto 5px;
-    display: inline-block;
+@keyframes waves { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 img{
@@ -21,38 +27,25 @@ img{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
-.anime-stats{
+.manga-stats{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
     padding: 20px;
     border-radius: 10px;
 }
-.anime-stats h2{
-   padding-bottom: 10px;
-   color: white;
+
+.manga-stats h2{
+    padding-bottom: 10px;
+    color: white;
 }
-.anime-stats p{
+.manga-stats p{
     color: white;
     text-align: left;
 }
+
 .description p {
     font-size:medium;
     max-width: 500px;
     margin-left: auto;
     margin-top: auto;
     display: inline-block;
-    
 }
-/* background-color: #1E2027;
-padding-top: 10px;
-margin: auto;
-background-image: linear-gradient( rgb(137, 162, 143), rgb(43,52,40));
-position: absolute;
-top: 50%;
-left: 60%;
-transform: translatey(-50%) translatex(-50%);
-box-shadow: rgba(2, 0, 0, 0.35) 0px 5px 15px;
-width: 80%;
-display: flex;
-border-radius: 10px;
-overflow: hidden;
-color: white; */

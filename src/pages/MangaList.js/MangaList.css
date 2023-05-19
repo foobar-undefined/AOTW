@@ -28,7 +28,7 @@
     margin-left: 250px;
 }
 .manga-card{
-    padding: 16px 8px;
+    padding: 20px 8px;
 }
 
 .manga-card > img {
@@ -39,7 +39,6 @@
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
     transition: 0.4s;
     display: block;
-    margin-left: auto;
     margin-right: auto;
 }
 
@@ -48,14 +47,5 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
-}
-.mangaPage{
-    position: relative;
-    margin-left: 250px;
-    overflow: hidden;
-    padding: 1em 0;
-    margin-left: auto;
     margin-right: auto;
-    text-align:center;
-    width: 500px;
 }
