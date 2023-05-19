@@ -28,7 +28,7 @@ export default function App() {
             </div>
         </>
         ):(
-            <AuthPage path ="/" setUser={setUser}/>
+            <AuthPage path ="/home" setUser={setUser}/>
         )}
     </div>
   );

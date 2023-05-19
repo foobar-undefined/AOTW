@@ -8,15 +8,16 @@ AOTW allows you to check out on hundreds of anime or manga across the internet. 
 [Trello](https://trello.com/b/MKzEK06n/aotw)
 
 ## Website previews: 
-<img src="images/sign-up.png>" width ="500px">
+<p>
+    <img src="images/sign-up.png>" width ="500px">
+</p>
+    <img src="images/anime.png>" width ="500px">
 
-<img src="images/anime.png>" width ="500px">
-
-<img src="images/search.png>" width ="500px">
+    <img src="images/search.png>" width ="500px">
 
 ## 👇 Check out the website here! 👇
 
-[See the app working!](https://main--playful-cat-53712f.netlify.app/)
+[See the app working!](https://aotw.netlify.app/home)
 
 # Technologies:
 - JavaScript
