@@ -5,14 +5,14 @@
 AOTW allows you to check out on hundreds of anime or manga across the internet. You'll be able to login and search your favorite content and see all kinds of information.
 
 ## Project proposal:
-- [Trello] (https://trello.com/b/MKzEK06n/aotw)
+[Trello](https://trello.com/b/MKzEK06n/aotw)
 
 ## Website previews: 
-<img src="../../imgs/sign-up.PNG> " width ="500px">
+<img src="src/imgs/sign-up.PNG> " width ="500px">
 
-<img src="../../imgs/anime.PNG> " width ="500px">
+<img src="src/imgs/anime.PNG> " width ="500px">
 
-<img src="../imgs/search.PNG> " width ="500px">
+<img src="src/imgs/search.PNG> " width ="500px">
 
 ## 👇 Check out the website here!: 👇
 
