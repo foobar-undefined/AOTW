@@ -10,7 +10,7 @@ import Manga from '../Manga/Manga';
 import Home from '../Home/Home';
 
 export default function App() {
-  const [user, setUser] = useState("Michael");
+  const [user, setUser] = useState(null);
   
   return (
     <div className="App">
@@ -19,7 +19,7 @@ export default function App() {
         <NavBar user ={user} setUser={setUser}/>
             <div className='routes-container'>
               <Routes>
-                <Route path = "home" element= {<Home />}/>
+                <Route path = "/home" element= {<Home />}/>
                 <Route path="anime/" element={<AnimeList />} />
                 <Route path="anime/:id" element={<Anime />} />
                 <Route path="manga/" element ={<MangaList/>}/>

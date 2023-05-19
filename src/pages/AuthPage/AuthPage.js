@@ -21,14 +21,15 @@ export default function AuthPage({setUser}){
                         height: "100vh"
             }}>
             {isNewUser ? (
-                <div >
+                <div className="auth-message">
                     <LoginPage setUser={setUser} />
-                    { <button className="signUpBtn" onClick={toggleAuthMode}>Sign up</button> }
+                    <p> Don't have an account? { <button className="signUpBtn" onClick={toggleAuthMode}>SIGN UP</button> }
+                    </p>
                 </div>
             ):(
-                <div>
+                <div className="auth-message">
                     <SignUpForm setUser = {setUser} toggleAuthMode={toggleAuthMode} />
-                    <p> Not a user? { <button className="login" onClick={toggleAuthMode}>Log In</button> }
+                    <p> Not a user? { <button className="login" onClick={toggleAuthMode}>LOG IN</button> }
                     </p>
                 </div>
             )}
