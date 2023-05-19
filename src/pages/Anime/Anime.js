@@ -5,7 +5,7 @@ export default function Anime(){
     const location = useLocation();
     const {anime} = location.state; 
     console.log(anime);
-
+    let youtubeUrl = "https://www.youtube.com/embed/"
     if (!anime) {
         return <div>Anime not found.</div>;
       }
@@ -24,10 +24,19 @@ export default function Anime(){
                         <p><strong>Start Date:</strong>  {anime.attributes.startDate}</p>
                         <p><strong>End Date:</strong>  {anime.attributes.endDate}</p>
                         <p><strong>Episode Count:</strong> {anime.attributes.episodeCount}</p>
+                        <p><strong>Age rating: </strong> {anime.attributes.ageRating}</p>
                         <p><strong>Average rating:</strong>  {anime.attributes.averageRating}</p>
                         <br />
                         <div className="description">
                             <p><strong> Description: </strong> <br />{anime.attributes.synopsis}</p>
+                        </div>
+                        <div className="video-container">
+                            <br />
+                            <iframe width="560" height="345" 
+                                src={`${youtubeUrl}${anime.attributes.youtubeVideoId}`}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen    
+                            ></iframe>
                         </div>
                     </div>
                 </div>

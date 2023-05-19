@@ -8,8 +8,6 @@
     background-size: 200%;
     animation: waves 5s ease;
 }
-
-
 .img-container{
     padding: 30px;
     margin: auto 5px;
@@ -40,19 +38,6 @@ img{
     margin-left: auto;
     margin-top: auto;
     display: inline-block;
+    text-align: center;
     
 }
-/* background-color: #1E2027;
-padding-top: 10px;
-margin: auto;
-background-image: linear-gradient( rgb(137, 162, 143), rgb(43,52,40));
-position: absolute;
-top: 50%;
-left: 60%;
-transform: translatey(-50%) translatex(-50%);
-box-shadow: rgba(2, 0, 0, 0.35) 0px 5px 15px;
-width: 80%;
-display: flex;
-border-radius: 10px;
-overflow: hidden;
-color: white; */

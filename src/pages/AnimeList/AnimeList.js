@@ -57,6 +57,7 @@ export default function AnimeList(props){
                         <AnimeCard anime={animeItem} key={animeItem.id}/>
                         ))}
                 </div>
+
             </div>
         </main>
     );
