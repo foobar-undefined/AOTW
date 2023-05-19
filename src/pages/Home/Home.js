@@ -9,7 +9,11 @@ export default function Home(){
                             backgroundRepeat: "no-repeat",
                             backgroundSize: "cover",
                             height: "100vh"
-                }}> <h1> Welcome,  Please stay a while</h1>
+                        }}> 
+        </div>
+        <div className='welcome-message'>
+            <h1> Have you ever worked with anything... high-tech?</h1>
+            <h1> - TOM from toonami</h1>
         </div>
     </div>
 
