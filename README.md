@@ -8,11 +8,11 @@ AOTW allows you to check out on hundreds of anime or manga across the internet. 
 [Trello](https://trello.com/b/MKzEK06n/aotw)
 
 ## Website previews: 
-<img src="/src/imgs/sign-up.PNG> " width ="500px">
+<img src="images/sign-up.PNG>" width ="500px">
 
-<img src="/src/imgs/anime.PNG> " width ="500px">
+<img src="images/anime.PNG>" width ="500px">
 
-<img src="/src/imgs/search.PNG> " width ="500px">
+<img src="images/search.PNG>" width ="500px">
 
 ## 👇 Check out the website here!: 👇
 
