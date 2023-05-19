@@ -3,6 +3,7 @@
     align-items: center;
     gap:20px;
     justify-content: center;
+    height: 100vh;
     background-image: linear-gradient(270deg, rgb(137, 162, 143), rgb(43,52,40));
     background-size: 200%;
     animation: waves 5s ease;
@@ -21,6 +22,7 @@
 
 img{
     border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .anime-stats{
